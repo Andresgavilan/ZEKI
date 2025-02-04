@@ -1,1 +1,166 @@
-<h1>Hellow!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEKI App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav button {
+      background-color: #555;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    nav button:hover {
+      background-color: #777;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    blockquote {
+      background: #f0f0f0;
+      border-left: 5px solid #ccc;
+      margin: 20px 0;
+      padding: 10px;
+      font-style: italic;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button onclick="showSection('welcome')">Welcome</button>
+    <button onclick="showSection('conference')">Conference Space</button>
+    <button onclick="showSection('coworking')">Co-Working</button>
+    <button onclick="showSection('experience')">Experience Hub</button>
+    <button onclick="showSection('social')">Social Lounge</button>
+    <button onclick="showSection('focus')">Focus Space</button>
+  </nav>
+
+  <main id="content">
+    <!-- Default content (Welcome section) -->
+    <div id="welcome">
+      <h1>Welcome in ZEKI</h1>
+      <blockquote>
+        <p><span role="img" aria-label="bulb">💡</span> Read the Hausordnung tips ✨</p>
+        <p><span role="img" aria-label="bulb">💡</span> Scan the QR to learn more</p>
+        <img src="uploads/857d5f0f807b9aa07aa77fb0346d4bd7/qrcode_gitlab.dai-labor.de.png" alt="qrcode_gitlab.dai-labor.de" width="200" />
+        <p><span role="img" aria-label="bulb">💡</span> You can book different rooms in ZEKI <a href="https://roombooking.dai-lab.de/index.php">Book a Room</a></p>
+        <p><span role="img" aria-label="bulb">💡</span> ZEKI-Guests Network -- <strong>Username</strong> = zekiguest <strong>Password</strong> = zekizeki</p>
+      </blockquote>
+    </div>
+
+    <!-- Other sections (hidden by default) -->
+    <div id="conference" style="display: none;">
+      <h1>🤝 Conference Space</h1>
+      <ul>
+        <li>Book this room <a href="https://roombooking.dai-lab.de/index.php">here</a></li>
+        <li>How to use the 🦉<a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/%F0%9F%A4%9D-Conference-Space/%F0%9F%A6%89-OWLS">OWLS Video Conference Gerät</a></li>
+      </ul>
+    </div>
+
+    <div id="coworking" style="display: none;">
+      <h1>💻 Co-Working</h1>
+      <ul>
+        <li>Book the mute box 🤐<a href="https://roombooking.dai-lab.de/index.php">in this Link</a></li>
+        <li>You can learn more <a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/%F0%9F%92%BB-Co-Working">here</a></li>
+        <li>To <a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/%F0%9F%92%BB-Co-Working/%F0%9F%96%A8%EF%B8%8FPrint">print</a></li>
+      </ul>
+    </div>
+
+    <div id="experience" style="display: none;">
+      <h1>🤓 Experience Hub</h1>
+      <ul>
+        <li>Book this room <a href="https://roombooking.dai-lab.de/index.php">here</a></li>
+        <li>How to use the 🦉<a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/%F0%9F%A4%9D-Conference-Space/%F0%9F%A6%89-OWLS">OWLS Video Conference Gerät</a></li>
+        <li>The BeIntelli interactive table <a href="uploads/8cf1c80d8e4ca32eb4b2226b0524e7f0/InteractiveDesk.pdf">Interactive table</a></li>
+      </ul>
+    </div>
+
+    <div id="social" style="display: none;">
+      <h1>🍵 Social Lounge</h1>
+      <ul>
+        <li>Book this room <a href="https://roombooking.dai-lab.de/index.php">here</a></li>
+        <li>🤎<a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/%F0%9F%8D%B5-Social-Lounge/%F0%9F%A4%8ECafe">how to coffee</a></li>
+        <li>⛄<a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/%F0%9F%8D%B5-Social-Lounge#fridge-rules">Fridge-rules</a></li>
+        <li>🧽<a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/%F0%9F%8D%B5-Social-Lounge/%F0%9F%A7%BDausr%C3%A4umen">How to dishwasher</a></li>
+        <li>👩‍🍳<a href="https://gitlab.dai-labor.de/pub/zeki-howtos/-/wikis/ZEKI_Home/Social-Lounge/%F0%9F%91%A9%E2%80%8D%F0%9F%8D%B3Kochen">How to Cook</a></li>
+      </ul>
+    </div>
+
+    <div id="focus" style="display: none;">
+      <h1>🥸 Focus Space</h1>
+      <ul>
+        <li>No personal calls or loud conversations</li>
+        <li>Clear and concise communication, longer conversations outside</li>
+        <li>Avoid unnecessary interruptions, use visual cues</li>
+        <li>Keep work area clean and organized</li>
+        <li>Take breaks outside the focus room</li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      const sections = document.querySelectorAll('main > div');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      // Show the selected section
+      const selectedSection = document.getElementById(sectionId);
+      if (selectedSection) {
+        selectedSection.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
